@@ -32,5 +32,10 @@
     "axios": "^0.18.0",
     "vee-validate": "^2.1.4",
     "vue": "^2.5.18"
+  },
+  "scripts": {
+    "watch": "webpack --watch --mode=development",
+    "build": "webpack --mode=production --optimize-minimize",
+    "build:dev": "webpack --mode=development"
   }
 }

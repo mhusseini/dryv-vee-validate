@@ -1,14 +1,11 @@
 const path = require('path');
 
-const isDev = true;
-
 module.exports = {
     node: false,
     target: "web",
     node: {
         global: false
     },
-    mode: isDev ? "development" : "production",
     entry: './src/index.ts',
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -35,8 +32,5 @@ module.exports = {
                 exclude: /node_modules/
             }
         ]
-    },
-    optimization: {
-        minimize: !isDev
-    },
+    }
 }
