@@ -1,8 +1,8 @@
-import axios from "axios";
+// import axios from "axios";
 
 const w = window as any;
-const a = w.dryv = w.dryv || {};
-const vee = a.vee = a.vee || {};
+const a = w.dryv = (w.dryv || {});
+const vee = a.vee = (a.vee || {});
 
 function normalize(txt: string) {
     txt = txt.replace("*.", "");
@@ -37,10 +37,9 @@ const validator = {
         const sep = url.indexOf("?") < 0 ? "?" : "&";
         const fullUrl = url + sep + fields;
 
-        return axios.get(fullUrl)
-            .then(response => {
-                return !!response.data;
-            });
+        return fetch(fullUrl)
+            .then((response: Response) => response.json())
+            .then((isValid: boolean) => isValid);
     }
 };
 

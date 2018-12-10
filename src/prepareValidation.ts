@@ -1,8 +1,8 @@
 import Vue from "Vue";
 import { Field } from "vee-validate";
 
-var w = window as any;
-var a = w.dryv = w.dryv || {};
+const w = window as any;
+const a = w.dryv = (w.dryv || {});
 a.vee = a.vee || {};
 
 export function refresh(validator: any, val: any, form: HTMLFormElement) {

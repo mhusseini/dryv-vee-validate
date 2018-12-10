@@ -9,14 +9,14 @@ module.exports = {
     entry: './src/index.ts',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'dryv-vee.min.js',
+        filename: 'index.js',
         libraryTarget: 'umd',
-        library: 'DryvVee'
+        library: 'DryvVeeValidate'
     },
     externals: {
         "vue": "Vue",
         "vee-validate": "vee-validate",
-        "axios": "https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js",
+        //"axios": "https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js",
     },
     resolve: {
         extensions: ['.ts', '.js', '.json'],

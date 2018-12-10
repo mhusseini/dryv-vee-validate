@@ -1,5 +1,5 @@
-var w = window as any;
-var a = w.dryv = w.dryv || {};
+const w = window as any;
+const a = w.dryv = (w.dryv || {});
 a.vee = a.vee || {};
 
 const validator = {

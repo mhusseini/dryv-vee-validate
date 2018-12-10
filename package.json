@@ -4,13 +4,14 @@
   "description": "Dryv client-side intgeration into VeeValidate for VueJS.",
   "keywords": [
     "asp.net",
+    "nodejs",
     "validation",
     "dryv",
     "vee-validate",
-    "Vee-Validate",
-    "VueJs"
+    "vuejs"
   ],
-  "main": "dist/dryv-vee-validate.js",
+  "main": "dist/index.js",
+  "types": "./lib/index.d.ts",
   "files": [
     "dist/*.*",
     "README.md",
@@ -26,7 +27,8 @@
   "devDependencies": {
     "ts-loader": "^5.3.1",
     "typescript": "^3.2.2",
-    "webpack": "^4.27.1"
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2"
   },
   "dependencies": {
     "axios": "^0.18.0",
