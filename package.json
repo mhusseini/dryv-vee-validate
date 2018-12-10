@@ -1,0 +1,36 @@
+{
+  "name": "dryv-vee-validate",
+  "version": "1.0.0",
+  "description": "Dryv client-side intgeration into VeeValidate for VueJS.",
+  "keywords": [
+    "asp.net",
+    "validation",
+    "dryv",
+    "vee-validate",
+    "Vee-Validate",
+    "VueJs"
+  ],
+  "main": "dist/dryv-vee-validate.js",
+  "files": [
+    "dist/*.*",
+    "README.md",
+    "LICENSE"
+  ],
+  "author": "Munir Husseini",
+  "license": "Apache-2.0",
+  "bugs": "https://github.com/mhusseini/dryv-vee-validate/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mhusseini/dryv-vee-validate"
+  },
+  "devDependencies": {
+    "ts-loader": "^5.3.1",
+    "typescript": "^3.2.2",
+    "webpack": "^4.27.1"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "vee-validate": "^2.1.4",
+    "vue": "^2.5.18"
+  }
+}
