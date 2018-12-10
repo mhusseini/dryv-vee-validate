@@ -1,6 +1,6 @@
 {
   "name": "dryv-vee-validate",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Dryv client-side intgeration into VeeValidate for VueJS.",
   "keywords": [
     "asp.net",
